@@ -33,6 +33,8 @@ En esta primera imagen ejecutamos *ip a* para ver las interfaces.
 Creamos tres usuarios.  
 ![imagen](./7.png)
 ##2.3 Instalar servicio LTSP
-Pasamos a instalar el servicio LTSP.
+Pasamos a instalar el servicio LTSP. Ejecutamos el comando *apt-get install *
+![imagen](./7.png)
+![imagen](./8.png)
 #3. Máquinas clientes
 
