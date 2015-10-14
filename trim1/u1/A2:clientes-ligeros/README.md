@@ -54,6 +54,9 @@ No encontraba la imagen en la ruta que estaba configurada por defecto, así que 
  en este documento primero descomenté la linea *next-server*, y luego modifiqué las rutas para que en vez de que buscara aquí:
  ![imagen](./12revisar.png)  
  Buscara aquí:  
- ![imagen](./16.png)
+ ![imagen](./16.png)  
+ No conseguí que iniciará cambiando las rutas de esa manera, al final la solución fue cambiar *i386* por *amd64*, en las rutas del mismo documento. Una vez hecho esto conseguí que el cliente arrancara.
 #3. Máquinas clientes
+Para terminar dejo un vídeo demostrando que conseguí acceder al cliente.
 
+![enlace](https://www.youtube.com/watch?v=08sfby7WX_w)
