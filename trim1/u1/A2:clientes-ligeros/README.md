@@ -21,7 +21,7 @@ La siguiente imagen muestra como configuré la conexión puente, con una IP dent
 ![imagen](./11.png)
 ![imagen](./12revisar.png)
 ![imagen](./13cliente.png)
-![imagen](./14.png)
+
 ![imagen](./16.png)
 ![imagen](./17.png)
 ##2.2 Configurar Server
@@ -34,8 +34,17 @@ Creamos tres usuarios.
 ![imagen](./7.png)
 ##2.3 Instalar servicio LTSP
 Pasamos a instalar el servicio LTSP. Ejecutamos el comando *apt-get install openssh-server* el ssh sirve para acceder a las máquinas remotas.  
-![imagen](./8.png)
-![imagen](./9.png)
-![imagen](./10.png)
+Una vez instalado el servicio ssh, tenemos que editar el archivo */etc/ssh/sshd_config*, para implementar que se ejecute con contraseña de root.
+
+![imagen](./8.png)  
+Añadimos la línea *PermitRootLogin yes*.  
+![imagen](./9.png)  
+Para terminar de instalar el servicio LTSP, ejecutamos *apt-get install ltsp-server-standalone*
+![imagen](./10.png)  
+Lo siguiente será crear una imagen del sistema operativo partiendo del real *ltsp-build-client*, 
+esta imagen se cargará en la memoria de los clientes y actuará de sistema.  
+En teoría ya la imagen está creada y las conexiones de red correctas. Debemos comprobar por último que tanto el servicio dhcp como el ftp están operativos.
+Lo primero que yo hice fue ejecutar estos dos comandos y comprobar que ambos procesos funcionaban:  
+![imagen](./14.png)
 #3. Máquinas clientes
 
