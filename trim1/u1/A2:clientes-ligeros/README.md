@@ -18,9 +18,9 @@ La siguiente imagen muestra como configuré la conexión puente, con una IP dent
 
 
 
-![imagen](./11.png)
+
 ![imagen](./12revisar.png)
-![imagen](./13cliente.png)
+
 
 ![imagen](./16.png)
 ![imagen](./17.png)
@@ -44,7 +44,11 @@ Para terminar de instalar el servicio LTSP, ejecutamos *apt-get install ltsp-ser
 Lo siguiente será crear una imagen del sistema operativo partiendo del real *ltsp-build-client*, 
 esta imagen se cargará en la memoria de los clientes y actuará de sistema.  
 En teoría ya la imagen está creada y las conexiones de red correctas. Debemos comprobar por último que tanto el servicio dhcp como el ftp están operativos.
-Lo primero que yo hice fue ejecutar estos dos comandos y comprobar que ambos procesos funcionaban:  
-![imagen](./14.png)
+Lo primero que hice yo fue ejecutar estos dos comandos y comprobar que ambos procesos funcionaban:  
+![imagen](./14.png)  
+A continuación inicié el cliente, primero configuré la máquina virtual de manera que buscará por la red para arrancar el sistema.  
+![imagen](./11.png)  
+Una vez iniciada este es el error que me salia:  
+![imagen](./13cliente.png)
 #3. Máquinas clientes
 
