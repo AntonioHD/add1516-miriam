@@ -19,10 +19,10 @@ La siguiente imagen muestra como configuré la conexión puente, con una IP dent
 
 
 
-![imagen](./12revisar.png)
 
 
-![imagen](./16.png)
+
+
 ![imagen](./17.png)
 ##2.2 Configurar Server
 Lo siguiente es ejecutar ciertos comandos para comprobar la salida de todos ellos.  
@@ -49,6 +49,11 @@ Lo primero que hice yo fue ejecutar estos dos comandos y comprobar que ambos pro
 A continuación inicié el cliente, primero configuré la máquina virtual de manera que buscará por la red para arrancar el sistema.  
 ![imagen](./11.png)  
 Una vez iniciada este es el error que me salia:  
-![imagen](./13cliente.png)
+![imagen](./13cliente.png)  
+No encontraba la imagen en la ruta que estaba configurada por defecto, así que tuve que editar el archivo */etc/ltsp/dhcpd.conf*,
+ en este documento primero descomenté la linea *next-server*, y luego modifiqué las rutas para que en vez de que buscara aquí:
+ ![imagen](./12revisar.png)  
+ Buscara aquí:  
+ ![imagen](./16.png)
 #3. Máquinas clientes
 
