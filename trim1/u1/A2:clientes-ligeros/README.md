@@ -17,7 +17,7 @@ La siguiente imagen muestra como configuré la conexión puente, con una IP dent
 ![imagen](./3.png)
 
 
-![imagen](./10.png)
+
 ![imagen](./11.png)
 ![imagen](./12revisar.png)
 ![imagen](./13cliente.png)
@@ -33,8 +33,9 @@ En esta primera imagen ejecutamos *ip a* para ver las interfaces.
 Creamos tres usuarios.  
 ![imagen](./7.png)
 ##2.3 Instalar servicio LTSP
-Pasamos a instalar el servicio LTSP. Ejecutamos el comando *apt-get install *
-![imagen](./7.png)
+Pasamos a instalar el servicio LTSP. Ejecutamos el comando *apt-get install openssh-server* el ssh sirve para acceder a las máquinas remotas.  
 ![imagen](./8.png)
+![imagen](./9.png)
+![imagen](./10.png)
 #3. Máquinas clientes
 
