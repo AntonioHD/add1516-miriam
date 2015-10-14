@@ -51,4 +51,4 @@ No encontraba la imagen en la ruta que estaba configurada por defecto, así que 
 #3. Máquinas clientes
 Para terminar dejo un vídeo demostrando que conseguí acceder al cliente.
 
-![enlace](https://www.youtube.com/watch?v=08sfby7WX_w)
+![enlace](https://www.youtube.com/watch?v=08sfby7WX_w "Clientes Ligeros")
