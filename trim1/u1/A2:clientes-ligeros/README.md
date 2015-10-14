@@ -3,11 +3,17 @@ Esta práctica consiste en configurar un LTSP, Linux Terminal Server Project,que
 
 #2. Máquina Servidor
 Empezamos con la máquina servidor, donde tendremos que configurar la imagen que los clientes usaran para el sistema operativo.
+ 
 
 ##2.1 Preparar Server
 El servidor tendrá dos interfaces o adaptadores de red, uno apuntando hacia los clientes ligeros y otro hacia la conexión a internet, ya que tendrá que dar IPs a dichos clientes.
+A continuación vemos la configuración de ambas interfaces. Adaptador 1 en modo puente, corresponde con la interfaz eth0.
 ![imagen](./1.png)
+Adaptador 2 en modo red interna.
 ![imagen](./2.png)
+Una vez encendida la máquina virtual procedemos a configurar las conexiones de red.
+La siguiente imagen muestra como configuré la conexión puente, con una IP dentro del rango de la red de clase para acceder a internet.
+
 ![imagen](./3.png)
 ![imagen](./4.png)
 ![imagen](./5.png)
