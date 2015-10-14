@@ -16,14 +16,6 @@ La siguiente imagen muestra como configuré la conexión puente, con una IP dent
 
 ![imagen](./3.png)
 
-
-
-
-
-
-
-
-![imagen](./17.png)
 ##2.2 Configurar Server
 Lo siguiente es ejecutar ciertos comandos para comprobar la salida de todos ellos.  
 En esta primera imagen ejecutamos *ip a* para ver las interfaces.  
