@@ -12,3 +12,6 @@ El servidor tendrá dos interfaces o adaptadores de red, uno apuntando hacia los
 ##2.3 Instalar servicio LTSP
 
 #3. Máquinas clientes
+![imagen](./1.png)
+![imagen](./2.png)
+![imagen](./3.png)
