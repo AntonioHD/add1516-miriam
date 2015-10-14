@@ -51,4 +51,4 @@ No encontraba la imagen en la ruta que estaba configurada por defecto, así que 
 #3. Máquinas clientes
 Para terminar dejo un vídeo demostrando que conseguí acceder al cliente.
 
-<iframe width="560" height="315" src="https://www.youtube.com/embed/08sfby7WX_w" frameborder="0" allowfullscreen></iframe>
+<https://www.youtube.com/watch?v=08sfby7WX_w>
