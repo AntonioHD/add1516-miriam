@@ -15,12 +15,8 @@ Una vez encendida la máquina virtual procedemos a configurar las conexiones de 
 La siguiente imagen muestra como configuré la conexión puente, con una IP dentro del rango de la red de clase para acceder a internet.
 
 ![imagen](./3.png)
-![imagen](./4.png)
-![imagen](./5.png)
-![imagen](./6.png)
-![imagen](./7.png)
-![imagen](./8.png)
-![imagen](./9.png)
+
+
 ![imagen](./10.png)
 ![imagen](./11.png)
 ![imagen](./12revisar.png)
@@ -29,8 +25,14 @@ La siguiente imagen muestra como configuré la conexión puente, con una IP dent
 ![imagen](./16.png)
 ![imagen](./17.png)
 ##2.2 Configurar Server
-
+Lo siguiente es ejecutar ciertos comandos para comprobar la salida de todos ellos.  
+En esta primera imagen ejecutamos *ip a* para ver las interfaces.  
+![imagen](./4.png)  
+![imagen](./5.png)
+![imagen](./6.png)  
+Creamos tres usuarios.  
+![imagen](./7.png)
 ##2.3 Instalar servicio LTSP
-
+Pasamos a instalar el servicio LTSP.
 #3. Máquinas clientes
 
