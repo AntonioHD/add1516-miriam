@@ -1,0 +1,5 @@
+maria:mendez:maria@gmail.com:12/12/12:delete
+ana:luis:ana@gmail.com:05/04/02:add
+juan:perez::15/02/95:delete
+paco:gonzalez::01/10/94:add
+lucia:lopez:lucia@gmail.com:23/102/84:delete
