@@ -164,14 +164,25 @@ Por último, comprobamos con el comando "netstat" que la conexión está estable
 ![RDP](files/RDP/08.png)
 
 ##3.3. Linux a Windows 7
-
-![RDP](files/RDP/09.png)
-![RDP](files/RDP/10.png)
-![RDP](files/RDP/11.png)
+En lo que se refiere a la conexión de escritorio remoto de un Linux hacia un Windows, necesitamos descargar algún software que nos permita realizar esta operación, 
+hemos descargado el Remmina.
 
 ###3.3.1. Configuración servidor de escritorio remoto
+
+Es muy fácil de configurar, damos a nueva conexión e introducimos toda la información del cliente que vamos a monitorizar.
+
+![RDP](files/RDP/09.png)
+
 ###3.3.2. Conexión desde cliente Linux
 ***
+
+Para terminar conectamos y nos dará un certificado.
+
+![RDP](files/RDP/10.png)
+
+Podemos ver como la conexión se ha realizado con éxito, ejecutando el comando "netstat".
+
+![RDP](files/RDP/11.png)
 
 #4. Conexión escritorio remoto (Terminal Server)
 
