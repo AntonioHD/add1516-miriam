@@ -141,15 +141,17 @@ Por último nos aparecerá ya la ventana del escritorio remoto:
 ![RDP](files/RDP/04.png)
 
 ##3.2. Windows 7 a Linux
-
+Como en la conexión anterior, de Windows a Windows, seguimos utilizando el mismo software para el escritorio remoto.
+###3.2.1. Configuración servidor de escritorio remoto
+Introducimos la IP o el nombre del equipo al que queramos acceder mediante escritorio remoto.
 ![RDP](files/RDP/05.png)
 ![RDP](files/RDP/06.png)
-![RDP](files/RDP/07.png)
-![RDP](files/RDP/08.png)
-
-###3.2.1. Configuración servidor de escritorio remoto
 ###3.2.2. Conexión desde cliente Windows
 ***
+En este caso estamos conectándonos a una distribución Linux. Introducimos el nombre y contraseña de nuestro usuario.
+![RDP](files/RDP/07.png)
+Por último, comprobamos con el comando "netstat" que la conexión está establecida.
+![RDP](files/RDP/08.png)
 
 ##3.3. Linux a Windows 7
 
