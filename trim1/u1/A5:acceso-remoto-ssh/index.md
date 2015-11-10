@@ -64,3 +64,48 @@ Por último, hacemos ping entre las máquinas para comprobar la conexión.
 ![imagen](files/pingclient1.png)
 
 # 2.3. Cliente Windows
+
+En el cliente Windows vamos a descargar PuTTy como cliente ssh. Y configuramos la interfaz de red de la siguiente manera:
+
+![imagen](files/client21.png)
+
+También debemos añadir las otras dos máquinas: cliente linux y servidor al fichero 'hosts'.
+
+![imagen](files/client22.png)
+
+Debemos realizar ping hacia las dos máquinas que añadimos al fichero anterior, para comprobar:
+
+![imagen](files/pingwindows.png)
+
+# 3. Instalación servicio SSH
+
+![imagen](files/09.png)
+
+## 3.1. Comprobación
+
+![imagen](files/system.png)
+
+## 3.2. Conexión SSH desde cliente
+
+Debemos comprobar en el servidor la configuración del cortafuegos, y añadir en servicios autorizados el ssh.
+
+![imagen](files/12.png)
+
+Conexión SSH desde cada cliente usando el usuario rodriguez1, desde ssh-client1:
+
+![imagen](files/client15.png)
+
+Conexión SSH desde ssh-client2 Windows:
+
+![imagen](files/client23.png)
+
+![imagen](files/client24.png)
+
+## 3.3. Cambiando claves del servidor
+
+# 4. Personalización prompt Bash
+
+# 5. Autenticación mediante claves públicas
+
+
+
