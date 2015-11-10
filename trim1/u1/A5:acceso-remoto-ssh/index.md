@@ -97,7 +97,7 @@ Conexión SSH desde cada cliente usando el usuario rodriguez1, desde ssh-client1
 
 Conexión SSH desde ssh-client2 Windows:
 
-![imagen](files/client23.png)
+![imagen](files/cient23.png)
 
 ![imagen](files/client24.png)
 
