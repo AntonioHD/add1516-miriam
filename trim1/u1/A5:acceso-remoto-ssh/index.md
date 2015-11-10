@@ -71,7 +71,7 @@ En el cliente Windows vamos a descargar PuTTy como cliente ssh. Y configuramos l
 
 También debemos añadir las otras dos máquinas: cliente linux y servidor al fichero 'hosts'.
 
-![imagen](files/client22.png)
+![imagen](files/cilent22.png)
 
 Debemos realizar ping hacia las dos máquinas que añadimos al fichero anterior, para comprobar:
 
