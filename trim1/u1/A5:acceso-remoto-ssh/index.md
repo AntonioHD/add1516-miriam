@@ -166,3 +166,81 @@ Debemos modificar en el servidor SSH el fichero /etc/ssh/sshd_config para permit
 A continuación, comprobamos desde cliente que podemos ejecutar la aplicación. Vemos que los alias asignados anteriormente siguen funcionando.
 
 ![imagen](files/geany.png)
+
+# 7. Aplicaciones Windows nativas
+
+Podemos tener aplicaciones Windows nativas instaladas en ssh-server mediante el emulador Wine. Lo instalamos en el servidor.
+
+Con zypper install wine:
+
+![imagen](files/wine.png)
+
+Falta un paquete que el Wine solo lo instalará:
+
+![imagen](files/wine2.png)
+
+Instalamos con Wine el notepad en el servidor: wine notepad.
+
+![imagen](files/wine3.png)
+
+Vemos que se ha ejecutado correctamente en el servidor:
+
+![imagen](files/wine5.png)
+
+Ahora accedemos desde el cliente1:
+
+![imagen](files/wine6.png)
+
+# 8. Restricciones de uso
+
+Vamos a modificar los usuarios del servidor SSH para añadir algunas restricciones de uso del servicio.
+
+## 8.1. Sin restricción (tipo 1)
+
+El usuario rodriguez1 podrá conectarse vía SSH sin restricciones, no es necesario hacer nada.
+
+## 8.2. Restricción total (tipo 2)
+
+En el servidor tenemos rodriguez2, desde local podemos usar sin problemas el usuario.
+
+Modificaremos SSH de modo que al usar el usuario por SSH desde los clientes tengamos permiso denegado.
+
+Empezamos modificando el fichero del servidor SSH /etc/ssh/sshd_config, así restringiremos el acceso a determinados usuarios.
+
+![imagen](files/17allow.png)
+
+![imagen](files/18.png)
+
+Comprobamos la restricción accediendo desde los clientes:
+
+![imagen](files/allowcliente1.png)
+
+## 8.3. Restricción en las máquinas (tipo 3)
+
+En este apartado intenté con varias posibles soluciones pero sin ningún éxito con ninguna.
+
+Modifiqué ambos ficheros: /etc/hosts.allow y /etc/hosts.deny. Pero no conseguí hacerlo funcionar.
+
+## 8.4. Restricción sobre aplicaciones (tipo 4)
+
+Usaremos rodriguez4, en el servidor creamos el grupo 'remoteapps' e incluimos al usuario en el grupo:
+
+![imagen](files/20.png)
+
+Localizamos geany, y movemos dicho programa del grupo propietario a remoteapps.
+
+![imagen](files/21.png)
+
+Cambiamos permisos del programa a 750, para impedir que los que no pertenezcan al grupo puedan ejecutarlo.
+
+Comprobamos funcionamiento en el servidor, ejecutamos el programa con rodriguez3 y vemos que no tiene permisos:
+
+![imagen](files/22.png)
+
+Desde cliente lo intentamos también con rodriguez3:
+
+![imagen](files/23.png)
+
+Pero vemos como con rodriguez4 sí se ejecuta:
+
+![imagen](files/24.png)
