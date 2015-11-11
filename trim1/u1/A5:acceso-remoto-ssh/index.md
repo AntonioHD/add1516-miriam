@@ -156,3 +156,13 @@ Vemos que desde el cliente2 sí nos pide password.
 ![imagen](files/client25.png)
 
 # 6. Uso de SSH como túnel para X
+
+Instalar en el servidor una aplicación de entorno gráfico (APP1) que no esté en los clientes, en este caso he elegido Geany.
+
+Debemos modificar en el servidor SSH el fichero /etc/ssh/sshd_config para permitir la ejecución de aplicaciones desde los clientes, opción X11Forwarding.
+
+![imagen](files/16.png)
+
+A continuación, comprobamos desde cliente que podemos ejecutar la aplicación. Vemos que los alias asignados anteriormente siguen funcionando.
+
+![imagen](files/geany.png)
