@@ -65,13 +65,13 @@ Por último, hacemos ping entre las máquinas para comprobar la conexión.
 
 # 2.3. Cliente Windows
 
-En el cliente Windows vamos a descargar PuTTy como cliente ssh. Y configuramos la interfaz de red de la siguiente manera:
+En el cliente Windows vamos a descargar PuTTy como cliente ssh. Y configuramos la interfaz de la siguiente manera:
 
 ![imagen](files/client21.png)
 
-También debemos añadir las otras dos máquinas: cliente linux y servidor al fichero 'hosts'.
+También vamos a añadir las otras dos máquinas: cliente linux y servidor al fichero 'hosts'.
 
-![imagen](files/cilent22.png)
+![imagen](files/client22.png)
 
 Debemos realizar ping hacia las dos máquinas que añadimos al fichero anterior, para comprobar:
 
@@ -87,13 +87,17 @@ Debemos realizar ping hacia las dos máquinas que añadimos al fichero anterior,
 
 ## 3.2. Conexión SSH desde cliente
 
-Debemos comprobar en el servidor la configuración del cortafuegos, y añadir en servicios autorizados el ssh.
+Debemos comprobar en el servidor la configuración del cortafuegos, y añadir en servicios autorizados el SSH.
 
 ![imagen](files/12.png)
 
-Conexión SSH desde cada cliente usando el usuario rodriguez1, desde ssh-client1:
+Conexión SSH desde cada cliente usando el usuario rodriguez1, desde cliente ssh-client1:
 
 ![imagen](files/client15.png)
+
+Comprobar contenido del fichero known_hosts en el equipo cliente1:
+
+![imagen](files/client16.png)
 
 Conexión SSH desde ssh-client2 Windows:
 
@@ -103,9 +107,52 @@ Conexión SSH desde ssh-client2 Windows:
 
 ## 3.3. Cambiando claves del servidor
 
+Modificar el fichero de configuración SSH (/etc/ssh/sshd_config) para dejar una única línea: HostKey /etc/ssh/ssh_host_rsa_key. Comentar el resto de líneas con configuración HostKey. Este parámetro define los ficheros de clave publica/privada que van a identificar a nuestro servidor. Con este cambio decimos que sólo vamos a usar las claves del tipo RSA.
+
+![imagen](files/10.png)
+
+Generamos nuevas claves de equipo en ssh-server, como usuario root ejecutamos lo siguiente:
+
+![imagen](files/13.png)
+
+Con esto conseguimos cambiar o regenerando nuevas claves públicas y privadas para identificar nuestro servidor. Reiniciamos el servicio SSH para que haga efecto este cambio: systemctl restart sshd.
+
+Al intentar conectar desde los clientes nos salta esta alerta:
+
+![imagen](files/client17.png)
+
 # 4. Personalización prompt Bash
+
+Ahora vamos a personalizar el prompt Bash para cambiar el color cuando tenemos activa una sesión SSH. Añadimos unas líneas al siguiente fichero:
+
+![imagen](files/14.png)
+
+Además crear el fichero /home/rodriguez1/.alias con el siguiente contenido. Este fichero, como bien dice el nombre, servirá para establecer algunos alias.
+
+![imagen](files/15.png)
+
+Comprobamos que funciona entrando desde un cliente:
+
+![imagen](files/client19.png)
 
 # 5. Autenticación mediante claves públicas
 
+El objetivo de este apartado es el de configurar SSH para poder acceder desde el cliente1, usando rodriguez4 sin poner password, pero usando claves pública/privada. Para ello vamos a la máquina cliente1, sin usar root.
 
+Ejecutamos el siguiente comando para generar un nuevo par de claves para el usuario en /home/miriam/.ssh/id_rsa y en /home/miriam/.ssh/id_rsa.pub.
 
+![imagen](files/client199.png)
+
+Ahora vamos a copiar la clave pública del usuario de la máquina cliente al fichero 'authorized_keys' del usuario rodriguez4 en el servidor. yo he elegido hacerlo usando un comando específico para ello: 
+
+![imagen](files/client1999.png)
+
+Comprobamos que podemos acceder remotamente sin introducir ninguna contraseña desde el cliente1.
+
+![imagen](files/client19999.png)
+
+Vemos que desde el cliente2 sí nos pide password.
+
+![imagen](files/client25.png)
+
+# 6. Uso de SSH como túnel para X
