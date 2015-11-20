@@ -3,8 +3,10 @@ Samba son un conjunto de aplicaciones para Linux, que implementan el protocolo d
 
 Vamos a necesitar las siguientes 3 MVs:
 
-Un servidor GNU/Linux con IP estática (172.18.8.53). 
+Un servidor GNU/Linux con IP estática (172.18.8.53).
+ 
 Un cliente GNU/Linux con IP estática (172.18.8.54). 
+
 Un cliente Windows con IP estática (172.18.8.13). 
  
 #2. Servidor Samba
