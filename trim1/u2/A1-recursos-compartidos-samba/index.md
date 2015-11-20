@@ -41,6 +41,9 @@ Un cliente Windows con IP estática (172.18.8.13).
 
 #6. Preguntas para resolver
 ¿Las claves de los usuarios en GNU/Linux deben ser las mismas que las que usa Samba?
+
 ¿Puedo definir un usuario en Samba llamado sith3, y que no exista como usuario del sistema?
+
 ¿Cómo podemos hacer que los usuarios sith1 y sith2 no puedan acceder al sistema pero sí al samba? (Consultar /etc/passwd)
+
 Añadir el recurso 'homes' al fichero 'smb.conf' según los apuntes. ¿Qué efecto tiene?
