@@ -108,11 +108,23 @@ Ejecutamos 'net use /?' como consulta.
 
 ![imagen](images/27.png)
 
-
-
 #4. Cliente Linux
 
 ##4.1. GUI
+
+Desde el entorno gráfico, comprobamos el acceso a los recursos compartidos:
+
+Probamos a crear archivos dentro de 'corusant' con usuarios con permisos:
+
+![imagen](images/28.png)
+
+Dentro de 'tatooine' igual:
+
+![imagen](images/29.png)
+
+Sim embargo, intentamos crear algo dentro de public con cualquier usuario y no nos deja:
+
+![imagen](images/30.png)
 
 ##4.2. Comandos
 
