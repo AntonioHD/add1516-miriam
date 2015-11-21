@@ -54,9 +54,29 @@ Este es el resultado final:
 
 ##2.5. Configurar Samba
 
+Primero copiaremos el fichero de configuración para tener una copia de seguridad:
+
+![imagen](images/12.png)
+
+Debemos configurar el servidor Samba con una serie de opciones, usando el Yast o directamente modificando el fichero. Debe quedar de la siguiente manera, estos son los ficheros que compartiremos:
+
+![imagen](images/13.png)
+
+![imagen](images/14.png)
+
 ##2.6. Usuarios Samba
 
+Despues de crear los usuarios en el sistema, debemos añadirlos a Samba, usaremos el comando 'smbpasswd -a nombredeusuario'. Comprobamos con el comando siguiente:
+
+![imagen](images/15.png)
+
 ##2.7. Reiniciar
+
+Después de reiniciar el servidor con el comando 'sustemctl stop smb' y 'systemctl start smb', comprobamos:
+
+![imagen](images/16.png)
+
+![imagen](images/17.png)
 
 #3. Windows
 
