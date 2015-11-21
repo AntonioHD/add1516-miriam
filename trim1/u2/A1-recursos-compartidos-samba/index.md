@@ -78,11 +78,41 @@ Después de reiniciar el servidor con el comando 'sustemctl stop smb' y 'systemc
 
 ![imagen](images/17.png)
 
+Vemos que el servicio SMB está a la escucha:
+
+![imagen](images/19.png)
+
 #3. Windows
+
+Desde un cliente Windows trataremos de acceder a los recursos compartidos del servidor Samba. Comprobaremos accesos de diferentes formas y con diferentes usuarios, al finalizar comprobaremos los resultados con ciertos comandos.
 
 ##3.1. Cliente Windows GUI
 
+Para consultar todas las conexiones hacemos 'net use'. En caso de que hubiera alguna conexión abierta ejecutamos 'net use * /d/y' para cerrarla.
+
+![imagen](images/20.png)
+
+Una vez hayamos accedido con un usuario y contraseña se creará la conexión:
+
+![imagen](images/22.png)
+
+Con el siguiente comando se elimina dicha conexión:
+
+![imagen](images/23.png)
+
+Comprobamos las conexiones realizadas desde el servidor:
+
+![imagen](images/25.png)
+
+![imagen](images/26.png)
+
 ##3.2. Cliente Windows comandos
+
+Comenzaremos ejecutando 'net use /?' como consulta.
+
+![imagen](images/27.png)
+
+
 
 #4. Cliente Linux
 
