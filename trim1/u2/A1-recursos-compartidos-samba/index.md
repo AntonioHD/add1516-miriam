@@ -86,8 +86,6 @@ Vemos que el servicio SMB está a la escucha:
 
 Desde un cliente Windows trataremos de acceder a los recursos compartidos del servidor Samba. Comprobaremos accesos de diferentes formas y con diferentes usuarios, al finalizar comprobaremos los resultados con ciertos comandos.
 
-##3.1. Cliente Windows GUI
-
 Para consultar todas las conexiones hacemos 'net use'. En caso de que hubiera alguna conexión abierta ejecutamos 'net use * /d/y' para cerrarla.
 
 ![imagen](images/20.png)
@@ -106,9 +104,7 @@ Comprobamos las conexiones realizadas desde el servidor:
 
 ![imagen](images/26.png)
 
-##3.2. Cliente Windows comandos
-
-Comenzaremos ejecutando 'net use /?' como consulta.
+Ejecutamos 'net use /?' como consulta.
 
 ![imagen](images/27.png)
 
