@@ -126,9 +126,42 @@ Sim embargo, intentamos crear algo dentro de public con cualquier usuario y no n
 
 ![imagen](images/30.png)
 
+Comprobamos con los comandos usados anteriormente:
+
+![imagen](images/31.png)
+
+![imagen](images/32.png)
+
 ##4.2. Comandos
 
+Accedemos a un equipo linux que será nuestro cliente Samba, mostraremos los recursos SMB de un equipo concreto, en este caso del servidor:
+
+![imagen](images/33.png)
+
+Crearemos en el local la carpeta '/mnt/samba-remoto/corusant' y la montamos como si fuera una carpeta más de nuestro sistema:
+
+![imagen](images/34.png)
+
+Comprobamos ejecutando el comando 'df -hT':
+
+![imagen](images/35.png)
+
+Comprobamos nuevamente con los comandos el resultado en el servidor:
+
+![imagen](images/36.png)
+
+![imagen](images/37.png)
+
 #5. Montaje automático
+
+Si queremos volver a acceder a los recursos remotos debemos repetir el proceso de montaje manual, a no ser que hagamos una configuración de montaje permanente o automática.
+Para configurar acciones de montaje automáticos cada vez que se inicie el equipo, debemos configurar el fichero '/etc/fstab', añadiendo las siguientes líneas:
+
+![imagen](images/38.png)
+
+Comprobamos al reiniciar:
+
+![imagen](images/39.png)
 
 #6. Preguntas para resolver
 
