@@ -165,10 +165,18 @@ Comprobamos al reiniciar:
 
 #6. Preguntas para resolver
 
-¿Las claves de los usuarios en GNU/Linux deben ser las mismas que las que usa Samba?
+* ¿Las claves de los usuarios en GNU/Linux deben ser las mismas que las que usa Samba?
 
-¿Puedo definir un usuario en Samba llamado sith3, y que no exista como usuario del sistema?
+No, la constraseña que asignamos cuando añadimos los usuarios a Samba son las que autenticarán al usuario cuando se conecte desde un cliente remoto utilizando el protocolo SMB.
 
-¿Cómo podemos hacer que los usuarios sith1 y sith2 no puedan acceder al sistema pero sí al samba? (Consultar /etc/passwd)
+* ¿Puedo definir un usuario en Samba llamado sith3, y que no exista como usuario del sistema?
 
-Añadir el recurso 'homes' al fichero 'smb.conf' según los apuntes. ¿Qué efecto tiene?
+No, antes debemos haber creado el usuario en Unix.
+
+* ¿Cómo podemos hacer que los usuarios sith1 y sith2 no puedan acceder al sistema pero sí al samba? (Consultar /etc/passwd)
+
+El contenido del fichero '/etc/passwd' decide quien puede acceder al sistema y que se puede hacer una vez dentro, por lo tanto deduzco que si no queremos que los usuarios accedan al sistema solo tendrémos que eliminar la línea de sith1 y de sith2.
+
+* Añadir el recurso 'homes' al fichero 'smb.conf' según los apuntes. ¿Qué efecto tiene?
+
+El recurso 'homes' configura los parámetros para compartir la carpeta home de cada usuario, es opcional ponerlo en 'smb.conf', si no existe no se compartirán las carpetas home de cada usuario. De lo contrario, si lo añadiéramos crearíamos un perfil móvil de esta manera, cuando se identifique el usuario en cualquiera de los PCs de la red, su perfil se creará de forma automática.
