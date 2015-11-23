@@ -1,0 +1,4 @@
+php:remove
+libreoffice:install
+apache2:install
+gedit:r
