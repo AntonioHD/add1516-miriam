@@ -32,8 +32,6 @@ A continuación, vamos a instalar el servidor LDAP, para ello es necesario abrir
 
 ![imagen](images/9.png)
 
-![imagen](images/16.png)
-
 ##1.3. Crear usuarios y grupos en LDAP
 
 ![imagen](images/10.png)
