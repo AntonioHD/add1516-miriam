@@ -54,6 +54,10 @@ Este es el resultado final:
 
 ##2.5. Configurar Samba
 
+Copiamos el fichero de configuración:
+
+![imagen](images/12.png)
+
 ##2.6. Usuarios Samba
 
 ##2.7. Reiniciar
