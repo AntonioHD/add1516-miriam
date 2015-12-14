@@ -90,10 +90,16 @@ Con el comando 'finger' comprobamos que los home de los usuarios están creados.
 
 #2. Otro equipo
 
-
+Ahora que tenemos una máquina con la información cargada en LDAP, vamos a tratar de hacer uso de ella desde una máquina distinta.
 
 ##2.1. Preparativos
 
+Aquí dejo captura de las configuraciones realizadas en el slave:
 
+![imagen](images/1c.png)
+
+![imagen](images/2c.png)
+
+![imagen](images/3c.png)
 
 ##2.2. Configuración
