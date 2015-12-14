@@ -20,27 +20,49 @@ A continuación, vamos a instalar el servidor LDAP, para ello es necesario abrir
 
 ![imagen](images/2.png)
 
+Seleccionamos servidor autónomo.
+
 ![imagen](images/3.png)
+
+No habilitamos el TLS.
 
 ![imagen](images/4.png)
 
+Configuramos la base de datos, dominio, contraseña.
+
 ![imagen](images/5.png)
+
+No habilitamos Kerberos, ya que nos dará error más adelante si lo habilitamos.
 
 ![imagen](images/6.png)
 
+A continuación, vemos la configuración general ya realizada.
+
 ![imagen](images/7.png)
+
+Para comprobar que el servicio está iniciado ejecutamos el comando siguiente:
 
 ![imagen](images/9.png)
 
 ##1.3. Crear usuarios y grupos en LDAP
 
+Si entramos en 'Authentication client' para introducir nuestro dominio.
+
 ![imagen](images/10.png)
+
+Para crear los usuarios y grupos lo haremos desde Yast, pero debemos definir un filtro para usuarios de LDAP.
 
 ![imagen](images/11.png)
 
+Los creamos:
+
 ![imagen](images/12.png)
 
+Creamos también los grupos:
+
 ![imagen](images/13.png)
+
+Para visualizar el esquema de lo que hemos configurado, nos descargamos algún browser LDAP, en este caso hemos utilizado 'GQ'.
 
 ![imagen](images/14.png)
 
@@ -50,6 +72,11 @@ A continuación, vamos a instalar el servidor LDAP, para ello es necesario abrir
 
 ![imagen](images/18.png)
 
+![imagen](images/19.png)
+
+![imagen](images/20.png)
+
+![imagen](images/21.png)
 
 #2. Otro equipo
 
