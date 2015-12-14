@@ -46,7 +46,7 @@ Para comprobar que el servicio está iniciado ejecutamos el comando siguiente:
 
 ##1.3. Crear usuarios y grupos en LDAP
 
-Si entramos en 'Authentication client' para introducir nuestro dominio.
+Entramos en 'Authentication client' para introducir nuestro dominio.
 
 ![imagen](images/10.png)
 
@@ -68,13 +68,23 @@ Para visualizar el esquema de lo que hemos configurado, nos descargamos algún b
 
 ##1.4. Autenticación
 
+Comprobamos que podemos entrar en la MV servidor usando los usuarios anteriormente definidos. Primero, debemos establecer 'ldap_uri' con nuestro dominio:
+
 ![imagen](images/17.png)
+
+Se puede ver como siendo sudo podemos acceder al usuario sin introducir contraseña:
 
 ![imagen](images/18.png)
 
+Igual con los otros usuarios:
+
 ![imagen](images/19.png)
 
+Sin embargo, sin ser sudo no podemos acceder ni introduciendo la contraseña:
+
 ![imagen](images/20.png)
+
+Con el comando 'finger' comprobamos que los home de los usuarios están creados.
 
 ![imagen](images/21.png)
 
