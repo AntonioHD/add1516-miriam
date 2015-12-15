@@ -88,6 +88,14 @@ Con el comando 'finger' comprobamos que los home de los usuarios están creados.
 
 ![imagen](images/21.png)
 
+Con los siguientes comandos haremos comprobaciones sobre los usuarios de LDAP.
+
+![imagen](images/22.png)
+
+![imagen](images/23.png)
+
+![imagen](images/24.png)
+
 #2. Otro equipo
 
 Ahora que tenemos una máquina con la información cargada en LDAP, vamos a tratar de hacer uso de ella desde una máquina distinta.
