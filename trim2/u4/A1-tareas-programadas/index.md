@@ -71,4 +71,32 @@ Crearemos una tarea diferida que apague la máquina a la hora especificada
 
 ![imagen](windows/4.png)
 
+![imagen](windows/5.png)
 
+A un minuto de realizarse la tarea, Windows avisa con un mensaje de advertencia:
+
+![imagen](windows/6.png)
+
+##3.3. Tarea periódica
+
+Vamos a programar una tarea periódica para que salte un mensaje en pantalla. Es el mismo proceso que antes pero seleccionando el momento en el que queremos que ocurra: diariamente, semanalmente.. Y vemos que ha funcionado.
+
+![imagen](windows/7.png)
+
+##3.4. Tarea asíncrona
+
+Programaremos una tarea asíncrona para que se abra un programa, en mi caso la consola de comandos. Elegimos diariamente, a las 9.
+
+![imagen](windows/8.png)
+
+Seleccionamos la ruta del archivo '.exe' de la consola.
+
+![imagen](windows/9.png)
+
+Vemos la tarea programada, junto con las otras anteriores que ya hemos programado:
+
+![imagen](windows/10.png)
+
+Y efectivamente, a las 9 la consola se abre:
+
+![imagen](windows/11.png)
