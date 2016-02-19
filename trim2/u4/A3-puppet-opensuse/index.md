@@ -6,15 +6,28 @@ Existen varias herramientas para realizar instalaciones desde un punto central, 
 
 **Nota:** cada MV debe tener configurada en su /etc/hosts al resto, para poder hacer ping entre ellas usando los nombres.
 
-a) MV1 - master: Dará las órdenes de instalación/configuración a los clientes.
-
-Comprobamos que las configuraciones son correctas ejecutando los comandos siguientes:
+a) MV1 - master: Dará las órdenes de instalación/configuración a los clientes (OpenSuse).
 
 ![imagen](1.png)
+
+Comprobamos que las configuraciones son correctas ejecutando los comandos siguientes:
 
 ![imagen](2.png)
 
 ![imagen](3.png)
 
 ![imagen](4.png)
+
+b) MV2 - client1: recibe órdenes del master (OpenSuse).
+
+Comprobamos configuraciones:
+
+![imagen](cli1.png)
+
+![imagen](cli2.png)
+
+![imagen](cli3.png)
+
+
+
 
