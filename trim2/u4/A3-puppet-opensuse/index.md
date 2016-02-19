@@ -10,11 +10,11 @@ a) MV1 - master: Dará las órdenes de instalación/configuración a los cliente
 
 Comprobamos que las configuraciones son correctas ejecutando los comandos siguientes:
 
-![imagen](images/1.png)
+![imagen](1.png)
 
-![imagen](images/2.png)
+![imagen](2.png)
 
-![imagen](images/3.png)
+![imagen](3.png)
 
-![imagen](images/4.png)
+![imagen](4.png)
 
