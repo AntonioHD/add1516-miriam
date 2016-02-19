@@ -28,6 +28,20 @@ Comprobamos configuraciones:
 
 ![imagen](cli3.png)
 
+c) MV3 - client2: recibe órdenes del master (Windows 7). 
+
+
+
+![imagen](w1.png)
+
+![imagen](w2.png)
+
+![imagen](w3.png)
+
+
+
+
+
 
 
 
