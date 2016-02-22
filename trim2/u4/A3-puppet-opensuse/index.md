@@ -162,3 +162,10 @@ Intentando ejecutar la nueva configuración me sale el mismo error, 'Acceso Dene
 
 ![imagen](w8.png)
 
+Finalmente después de instalar un nuevo Windows 7 he conseguido crear los usuarios:
+
+![imagen](w9.png)
+
+![imagen](w10.png)
+
+No me da tiempo de realizar 'hostwindows4.pp' si quiero subirlo a tiempo.
