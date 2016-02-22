@@ -130,13 +130,32 @@ Modificamos el fichero 'Site.pp' del master para que tenga en cuenta la configur
 
 ![imagen](17.png)
 
-Reiniciamos el servicio PuppetMaster:
+Reiniciamos el servicio PuppetMaster. Comprobamos que se ha creado el fichero, he tenido que cambiar la ruta y ponerlo en el escritorio por conflictos de permisos, no me dejaba crearlo en el disco C:.
 
-![imagen](18.png)
+![imagen](w7.png)
 
 ##6.2. Modificaciones en el cliente2
 
 Vamos a instalar el AgentePuppet en Windows, debemos instalar la misma versión que en el master, reiniciamos. Debemos aceptar el certificado en el master:
 
+![imagen](18.png)
+
 ![imagen](19.png)
 
+Iniciamos la consola Puppet como administrador y ejecutamos el comando:
+
+![imagen](w4.png)
+
+Varios comandos intentando crear el certificado:
+
+![imagen](w5.png)
+
+![imagen](w6.png)
+
+Configuramos en el master el fichero 'hostwindows3.pp' para el cliente Windows:
+
+![imagen](20.png)
+
+Intentando ejecutar la nueva configuración me sale el mismo error, 'Acceso Denegado':
+
+![imagen](w8.png)
