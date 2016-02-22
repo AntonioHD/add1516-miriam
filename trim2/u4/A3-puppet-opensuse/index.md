@@ -158,4 +158,6 @@ Configuramos en el master el fichero 'hostwindows3.pp' para el cliente Windows:
 
 Intentando ejecutar la nueva configuración me sale el mismo error, 'Acceso Denegado':
 
+**Hablando con los compañeros hemos llegado a la conclusión de que el problema de permisos es por la máquina, estoy utilizando una clonación de Windows 7 con licencia que nos proporcionó Jose. Intentaré instalar Windows 7 desde 0 y realizar las configuraciones**
+
 ![imagen](w8.png)
