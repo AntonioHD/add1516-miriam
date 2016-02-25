@@ -50,7 +50,9 @@ La carpeta del proyecto que contiene el Vagrantfile comparte los archivos entre 
 ##3.2. Redireccionamiento de los puertos
 
 Uno de los casos más comunes cuando tenemos una máquina virtual es la situación que estamos trabajando con proyectos enfocados a la web, y para acceder a las páginas no es lo más cómodo tener que meternos por terminal al ambiente virtual y llamarlas desde ahí, aquí entra en juego el enrutamiento de puertos.
+
 Modificamos el fichero Vagrantfile, de modo que el puerto 4567 del sistema anfitrión será enrutado al puerto 80 del ambiente virtualizado.
+
 **Más adelante comprobaremos que el redireccionamiento funciona, cuando tengamos instalado el servidor local.**
 
 ![imagen](images/7.png)
@@ -72,6 +74,8 @@ Reiniciamos la máquina si ya está en ejecución 'vagrant reload':
 Vemos que no nos ha ejecutado ningún cambio, en las dos últimas líneas de código que se ven, en color blanco, nos indica que si no se han producido los cambios en la configuraicón deberemos ejecutar 'vagrant provision':
 
 ![imagen](images/10.png)
+
+Ejecutamos 'vagrant provision' y observamos como se producen los cambios: apt-get update, ...
 
 ![imagen](images/11.png)
 
