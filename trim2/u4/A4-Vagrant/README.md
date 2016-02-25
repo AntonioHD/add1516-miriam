@@ -81,12 +81,4 @@ Modificamos el 'Vagrantfile' y agregamos la siguiente línea de configuración:
 
 ![imagen](images/16.png)
 
-#3. Instalación y configuración del cliente1
 
-Instalamos Agente Puppet en el cliente, el cliente debe saber quien es su master por lo tanto añadimos a /etc/puppet/puppet.conf la siguiente línea:
-
-![imagen](cli4.png)
-
-Comprobamos servicios:
-
-![imagen](cli6.png)
