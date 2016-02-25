@@ -67,6 +67,10 @@ Modificamos el 'Vagrantfile' y agregamos la siguiente línea de configuración:
 
 ![imagen](images/9.png)
 
+Reiniciamos la máquina si ya está en ejecución 'vagrant reload':
+
+Vemos que no nos ha ejecutado ningún cambio, en las dos últimas líneas de código que se ven, en color blanco, nos indica que si no se han producido los cambios en la configuraicón deberemos ejecutar 'vagrant provision':
+
 ![imagen](images/10.png)
 
 ![imagen](images/11.png)
