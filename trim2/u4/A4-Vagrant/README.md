@@ -59,7 +59,7 @@ Modificamos el fichero Vagrantfile, de modo que el puerto 4567 del sistema anfit
 
 #4. Suministro
  
-##4.1. Suminustro mediante script
+##4.1. Suministro mediante script
 
 Suministraremos al ambiente virtual con un pequeño script que instale Apache. Creamos el script 'install_apache.sh', dentro del proyecto:
 
