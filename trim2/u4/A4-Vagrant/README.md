@@ -79,14 +79,24 @@ Ejecutamos 'vagrant provision' y observamos como se producen los cambios: apt-ge
 
 ![imagen](images/11.png)
 
+Comprobamos que funciona introduciendo la IP en un navegador de nuestra máquina:
+
 ![imagen](images/12.png)
+
+##4.2. Suministro mediante Puppet
+
+Modificamos el fichero 'VagrantFile' y añadimos las siguientes líneas para que use Puppet. Concretamente que utilize el fichero específicado:
 
 ![imagen](images/13.png)
 
+Ahora muestro el fichero de configuración de puppet:
+
 ![imagen](images/14.png)
+
+Comprobamos que se ejecuta la acción del puppet cuando reiniciamos la máquina en vagrant:
 
 ![imagen](images/15.png)
 
-![imagen](images/16.png)
+
 
 
