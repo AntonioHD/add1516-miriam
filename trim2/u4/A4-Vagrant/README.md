@@ -97,6 +97,28 @@ Comprobamos que se ejecuta la acción del puppet cuando reiniciamos la máquina 
 
 ![imagen](images/15.png)
 
+#5. Otras cajas, nuestras cajas
 
+Mi idea principal es la de crear una caja trabajando con Opensuse, empiezo creando el usuario y entrando con él para crear las claves y dar permisos:
+
+![imagen](images/micaja1.png)
+
+Debemos cambiar en el fichero 'sudoers' y añadir la siguiente línea:
+
+![imagen](images/micaja2.png)
+
+Comprobamos que la guest additions están instaladas para mayor comodidad:
+
+![imagen](images/micaja3.png)
+
+Una vez realizadas estas configuraciones deberíamos poder ser capaces de crar el paquete vagrant de dicha máquina. Como se puede ver a continuación, he trabajado con 'Opensuse 13.2 puppet client1', dicha máquina aparece como no existente. **Al ver que no pillaba de ninguna manera el nombre de la máquina, intenté volver a realizar toda la configuración, cambie el nombre, hostname, usuario,... Probando con el nombre de la máquina de puppet master si lo pilla, en esta máquina solo cree el usuario, nunca intercambié claves.**
+
+![imagen](images/micaja4.png)
+
+![imagen](images/micaja5.png)
+
+![imagen](images/micaja6.png)
+
+![imagen](images/micaja7.png)
 
 
