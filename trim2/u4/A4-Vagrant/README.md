@@ -115,10 +115,28 @@ Una vez realizadas estas configuraciones deberíamos poder ser capaces de crar e
 
 ![imagen](images/micaja4.png)
 
+Añadimos la caja:
+
 ![imagen](images/micaja5.png)
+
+Cambiamos en el fichero VagrantFile:
 
 ![imagen](images/micaja6.png)
 
+Levantamos la máquina, aquí nos da error en la conexioń SSH:
+
 ![imagen](images/micaja7.png)
+
+La máquina ya está creada y funcionando, el problema principal es que no puedo acceder como usuario 'Vagrant':
+
+![imagen](images/micaja9.png)
+
+Añadí las dos líneas que puso mi compañero Kevin en el foro a ver si conseguía arreglar algo:
+
+![imagen](images/micaja10.png)
+
+Vuelvo a intentar entrar, me da error en el intercambio de claves (yo no he realizado intercambio en la máquina como ya he dicho anteriormente, ya que trabajé en client1 no en master).
+
+![imagen](images/micaja11.png)
 
 
