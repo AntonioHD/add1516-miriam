@@ -1,0 +1,4 @@
+﻿geany:kill
+iceweasel:notify
+tree:n
+
