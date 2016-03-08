@@ -1,28 +1,32 @@
 # 1. Procesos
+
 Un programa (estático) es un conjunto de instrucciones y datos que se encuentran almacenados en un
 fichero ordinario. Cuando un programa es leído por el sistema operativo y cargado en memoria para
 ejecutarse, se convierte en un proceso (dinámico). A los procesos, el sistema operativo les asigna recursos
 para que puedan ejecutarse correctamente. Entre estos recursos podemos citar: memoria, CPU,
 dispositivos de entrada-salida etc.
+
 Cada proceso en Linux tiene asociado un número que lo identifica. Este número es asignado por el
 núcleo, y se denomina identificador de proceso o PID (Process IDdentifier). Además del PID, los
 procesos tienen asignado otro número denominado PPID (Parent PID), que identifica al proceso “padre”
 del proceso en cuestión. Un proceso “padre” puede tener varios “hijos” pero cada “hijo” sólo tiene un
 “padre”.
 
---Imagen--
+![imagen](1.png)
 
-Procesos en “primer plano” y en “segundo plano”. Tareas (trabajos)
+## 1.1. Procesos en “primer plano” y en “segundo plano”
+
 Un sistema operativo Linux tiene la posibilidad de ejecutar una orden en primer plano (foreground) y
 una o más órdenes en segundo plano (background), originando cada una de ellas uno o más procesos.
 El procesamiento en “segundo plano” está indicado para comandos que cumplen las siguientes
 condiciones:
-· Tiempo de ejecución grande. Así se pueden ejecutar inmediatamente otros comandos tanto en “primer
+
+* Tiempo de ejecución grande. Así se pueden ejecutar inmediatamente otros comandos tanto en “primer
 plano” como en “segundo plano”.
-· No interactúan con el usuario. No necesiten entradas procedentes del teclado.
-· No producen salida en pantalla. O si la producen se redirigen a un fichero (para conservarla) o al
+* No interactúan con el usuario. No necesiten entradas procedentes del teclado.
+* No producen salida en pantalla. O si la producen se redirigen a un fichero (para conservarla) o al
 dispositivo nulo (para eliminarla).
-· No requieren prioridad alta. El kernel asigna menor prioridad a los procesos en “segundo plano”.
+* No requieren prioridad alta. El kernel asigna menor prioridad a los procesos en “segundo plano”.
 La ejecución de una orden en “segundo plamo” origina una tarea (trabajo).
 
 **top**
