@@ -114,7 +114,8 @@ El servicio individual más importante en un sistema UNIX es provisto por init. 
 
 Directorio init.d
 
-En el directorio /etc/init.d (puede ser /etc/rc.d/init.d) se encuentran los scripts que permiten controlar los servicios y su ejecución. Cada uno de éstos shells aqui existentes aceptan, casi de manera general, los parámetros:
+
+	: En el directorio /etc/init.d (puede ser /etc/rc.d/init.d) se encuentran los scripts que permiten controlar los servicios y su ejecución. Cada uno de éstos shells aqui existentes aceptan, casi de manera general, los parámetros:
 
     start
     stop
