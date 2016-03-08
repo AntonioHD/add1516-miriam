@@ -36,9 +36,13 @@ La ejecución de una orden en “segundo plamo” origina una tarea (trabajo).
 
 El comando top es un clásico para mostrar los recursos usados por tu sistema y así poder ver cual de ellos consume más.
 
+--imagen--
+
 **htop**
 
-Es un “top” mejorado, no suele venir instalado en las distribuciones Linux. Sobre todo es más fácil de interpretar que su hermano top y además puedes realizar operaciones como parar un proceso usando las teclas (la imágen que encabeza este post es una captura de htop).
+Es un “top” mejorado, no suele venir instalado en las distribuciones Linux. Sobre todo es más fácil de interpretar que su hermano top y además puedes realizar operaciones como parar un proceso usando las teclas.
+
+--imagen--
 
 Puedes instalarlo así en caso de no tenerlo en tu sistema:
 	
@@ -49,6 +53,8 @@ Puedes instalarlo así en caso de no tenerlo en tu sistema:
 El comando más usado (y universal) para manipular procesos en Linux. Muestra todos los procesos y además puedes realizar operaciones con ellos. Recuerda que puedes enlazarlos con otros comandos (por ejemplo con “grep” para buscar un proceso específico) usando las famosas pipes o tuberías. Ejemplo para buscar procesos de Firefox:
 	
 ps -A | grep firefox
+
+--imagen--
 
 **pstree**
 
@@ -64,9 +70,13 @@ Devuelve el ID del proceso que coincide con la búsqueda:
 	
 pgrep firefox
 
+--imagen--
+
 **pkill & killall**
 
-Estos comandos pueden matar procesos dando el nombre del mismo. Más información aquí.
+Estos comandos pueden matar procesos dando el nombre del mismo. 
+
+--imagen--
 
 **renice**
 
@@ -74,13 +84,19 @@ Este comando cambia el valor “nice” de un proceso en ejecución. El valor �
 	
 renice 19 PID
 
+--imagen--
+
 **xkill**
 
-Si ejecutas este comando desde un terminal en modo gráfico, el cursor cambiará a un símbolo “X” y con él podrás matar cualquier programa gráfico abierto que tengas en tus escritorios (si no quieres  matarlo, haz click con el botón derecho). Más formas de usar este comando desde aquí.
+Si ejecutas este comando desde un terminal en modo gráfico, el cursor cambiará a un símbolo “X” y con él podrás matar cualquier programa gráfico abierto que tengas en tus escritorios (si no quieres  matarlo, haz click con el botón derecho). 
+
+--imagen
 
 **atop**
 
 Monitor de procesos en ASCII en tiempo real donde muestra CPU, memoria, capas de red, usuario, prioridad, etc para cada proceso activo.
+
+--imagen--
 
 # 2. Servicios
 
