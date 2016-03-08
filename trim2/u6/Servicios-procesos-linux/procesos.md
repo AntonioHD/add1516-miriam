@@ -60,9 +60,13 @@ ps -A | grep firefox
 
 Visualiza todos los procesos en forma de árbol para mostrar sus dependencias.
 
+--imagen--
+
 **kill**
 
 Comando para matar o parar un proceso, funciona dando su ID.
+
+--imagen--
 
 **pgrep**
 
