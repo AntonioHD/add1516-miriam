@@ -113,7 +113,7 @@ El sistema generalmente inicia los demonios durante el arranque, siendo las func
 El servicio individual más importante en un sistema UNIX es provisto por init. init es el primer proceso que se inicia en todo sistema UNIX, siendo la última acción que el núcleo realiza al arrancar. Cuando init comienza su ejecución, continúa con el proceso de arranque del sistema, realizando varias tareas de inicio (chequear y montar sistemas de archivos, iniciar demonios, etc.). 
 
 Directorio init.d
-: En el directorio /etc/init.d (puede ser /etc/rc.d/init.d) se encuentran los scripts que permiten controlar los servicios y su ejecución. Cada uno de éstos shells aqui existentes aceptan, casi de manera general, los parámetros:
+ : En el directorio /etc/init.d (puede ser /etc/rc.d/init.d) se encuentran los scripts que permiten controlar los servicios y su ejecución. Cada uno de éstos shells aqui existentes aceptan, casi de manera general, los parámetros:
 
     start
     stop
