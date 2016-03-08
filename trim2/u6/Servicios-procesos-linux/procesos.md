@@ -12,7 +12,7 @@ procesos tienen asignado otro número denominado PPID (Parent PID), que identifi
 del proceso en cuestión. Un proceso “padre” puede tener varios “hijos” pero cada “hijo” sólo tiene un
 “padre”.
 
-![imagen](1.png)
+![imagen](images/1.png)
 
 ## 1.1. Procesos en “primer plano” y en “segundo plano”
 
