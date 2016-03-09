@@ -2,7 +2,7 @@
 
 Un programa (estático) es un conjunto de instrucciones y datos que se encuentran almacenados en un
 fichero ordinario. Cuando un programa es leído por el sistema operativo y cargado en memoria para
-ejecutarse, se convierte en un proceso (dinámico). A los procesos, el sistema operativo les asigna recursos
+ejecutarse, se convierte en un **proceso** (dinámico). A los procesos, el sistema operativo les asigna recursos
 para que puedan ejecutarse correctamente. Entre estos recursos podemos citar: memoria, CPU,
 dispositivos de entrada-salida etc.
 
@@ -110,30 +110,34 @@ Monitor de procesos en ASCII en tiempo real donde muestra CPU, memoria, capas de
 
 Un servicio es un programa que se ejecuta en segundo plano, fuera del control interactivo de los usuarios del sistema ya que carecen de interfaz con estos.
 
-El sistema generalmente inicia los demonios durante el arranque, siendo las funciones más comunes de estos las de ofrecer servicios a otros programas, ya sea respondiendo a las peticiones que llegan a través de la red o atendiendo a procesos que se ejecutan en el mismo sistema, así como responder ante cierta actividad del hardware —por ejemplo acpid maneja el apagado del sistema cuando el usuario pulsa el botón de encendido del equipo—. Algunos demonios sirven para configurar hardware —como es el caso de udevd en algunos sistemas GNU/Linux— ejecutar tareas planificadas —como hace cron— o realizar otras funciones similares.
+El sistema generalmente inicia los demonios durante el arranque, siendo las funciones más comunes de estos las de ofrecer servicios a otros programas, ya sea respondiendo a las peticiones que llegan a través de la red o atendiendo a procesos que se ejecutan en el mismo sistema, así como responder ante cierta actividad del hardware 
+- por ejemplo *acpid* maneja el apagado del sistema cuando el usuario pulsa el botón de encendido del equipo. 
+Algunos demonios sirven para configurar hardware:
+- como es el caso de *udevd* en algunos sistemas GNU/Linux
+- *cron* ejecutar tareas planificadas.
 
 **init**
 
 El servicio individual más importante en un sistema UNIX es provisto por init. init es el primer proceso que se inicia en todo sistema UNIX, siendo la última acción que el núcleo realiza al arrancar. Cuando init comienza su ejecución, continúa con el proceso de arranque del sistema, realizando varias tareas de inicio (chequear y montar sistemas de archivos, iniciar demonios, etc.). 
 
-*Directorio init.d*
+Directorio *init.d*
 
-En el directorio /etc/init.d (puede ser /etc/rc.d/init.d) se encuentran los scripts que permiten controlar los servicios y su ejecución. Cada uno de éstos shells aqui existentes aceptan, casi de manera general, los parámetros:
+En el directorio */etc/init.d* (puede ser */etc/rc.d/init.d*) se encuentran los scripts que permiten controlar los servicios y su ejecución. Cada uno de éstos shells aqui existentes aceptan, casi de manera general, los parámetros:
 
-    start
+	start
     stop
     restart
     status
 
 Algunos aceptan más, y pocos aceptan menos. Los parámetros suelen ser muy descriptivos (iniciar, detener, reiniciar y estatus del servicio). Así pues, para reiniciar nuestro servidor Apache en Ubuntu bastaría con escribir:
 
-/etc/init.d/apache2 restart
+`/etc/init.d/apache2 restart`
 
-Comando ‘service’
+Comando `service`
 
 Este comando, presente en la mayoría de distros, nos permite de igual manera interactuar con los servicios instalados en nuestro equipo, su sintaxis:
 
-service servicio param
+`service servicio param`
 
 
 ## Práctica creación de un servicio
