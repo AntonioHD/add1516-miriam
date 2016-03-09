@@ -38,6 +38,9 @@ El comando top es un clásico para mostrar los recursos usados por tu sistema y 
 
 ![imagen](images/top.png)
 
+![imagen](images/salida1.png)
+
+
 **htop**
 
 Es un “top” mejorado, no suele venir instalado en las distribuciones Linux. Sobre todo es más fácil de interpretar que su hermano top y además puedes realizar operaciones como parar un proceso usando las teclas.
@@ -55,6 +58,8 @@ El comando más usado (y universal) para manipular procesos en Linux. Muestra to
 ps -A | grep firefox
 
 ![imagen](images/ps_a.png)
+
+![imagen](images/salida2.png)
 
 **pstree**
 
@@ -94,7 +99,7 @@ renice 19 PID
 
 Si ejecutas este comando desde un terminal en modo gráfico, el cursor cambiará a un símbolo “X” y con él podrás matar cualquier programa gráfico abierto que tengas en tus escritorios (si no quieres  matarlo, haz click con el botón derecho). 
 
---imagen
+![imagen](images/salida3.png)
 
 **atop**
 
