@@ -77,7 +77,7 @@ Comando para matar o parar un proceso, funciona dando su ID.
 
 Devuelve el ID del proceso que coincide con la búsqueda:
 	
-pgrep firefox
+pgrep init
 
 ![imagen](images/pgrep_pstree.png)
 
@@ -105,16 +105,17 @@ Si ejecutas este comando desde un terminal en modo gráfico, el cursor cambiará
 
 Monitor de procesos en ASCII en tiempo real donde muestra CPU, memoria, capas de red, usuario, prioridad, etc para cada proceso activo.
 
+![imagen](images/atop.png)
 
 # 2. Servicios
 
 Un servicio es un programa que se ejecuta en segundo plano, fuera del control interactivo de los usuarios del sistema ya que carecen de interfaz con estos.
 
 El sistema generalmente inicia los demonios durante el arranque, siendo las funciones más comunes de estos las de ofrecer servicios a otros programas, ya sea respondiendo a las peticiones que llegan a través de la red o atendiendo a procesos que se ejecutan en el mismo sistema, así como responder ante cierta actividad del hardware 
-- por ejemplo *acpid* maneja el apagado del sistema cuando el usuario pulsa el botón de encendido del equipo. 
+- Por ejemplo *acpid* maneja el apagado del sistema cuando el usuario pulsa el botón de encendido del equipo. 
 Algunos demonios sirven para configurar hardware:
-- como es el caso de *udevd* en algunos sistemas GNU/Linux
-- *cron* ejecutar tareas planificadas.
+- Como es el caso de *udevd* en algunos sistemas GNU/Linux
+- *Cron* ejecutar tareas planificadas.
 
 **init**
 
