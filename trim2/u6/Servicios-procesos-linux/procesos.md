@@ -36,13 +36,13 @@ La ejecución de una orden en “segundo plamo” origina una tarea (trabajo).
 
 El comando top es un clásico para mostrar los recursos usados por tu sistema y así poder ver cual de ellos consume más.
 
---imagen--
+![imagen](images/top.png)
 
 **htop**
 
 Es un “top” mejorado, no suele venir instalado en las distribuciones Linux. Sobre todo es más fácil de interpretar que su hermano top y además puedes realizar operaciones como parar un proceso usando las teclas.
 
---imagen--
+![imagen](images/htop.png)
 
 Puedes instalarlo así en caso de no tenerlo en tu sistema:
 	
@@ -54,19 +54,19 @@ El comando más usado (y universal) para manipular procesos en Linux. Muestra to
 	
 ps -A | grep firefox
 
---imagen--
+![imagen](images/ps_a.png)
 
 **pstree**
 
 Visualiza todos los procesos en forma de árbol para mostrar sus dependencias.
 
---imagen--
+![imagen](images/pstree.png)
 
 **kill**
 
 Comando para matar o parar un proceso, funciona dando su ID.
 
---imagen--
+![imagen](images/kill_kil_l.png)
 
 **pgrep**
 
@@ -80,7 +80,7 @@ pgrep firefox
 
 Estos comandos pueden matar procesos dando el nombre del mismo. 
 
---imagen--
+![imagen](images/pkill.png)
 
 **renice**
 
@@ -100,7 +100,7 @@ Si ejecutas este comando desde un terminal en modo gráfico, el cursor cambiará
 
 Monitor de procesos en ASCII en tiempo real donde muestra CPU, memoria, capas de red, usuario, prioridad, etc para cada proceso activo.
 
---imagen--
+![imagen](images/atop.png)
 
 # 2. Servicios
 
@@ -130,3 +130,14 @@ Comando ‘service’
 Este comando, presente en la mayoría de distros, nos permite de igual manera interactuar con los servicios instalados en nuestro equipo, su sintaxis:
 
 service servicio param
+
+
+## Práctica creación de un servicio
+
+![imagen](images/A1_01.png)
+![imagen](images/A1_02.png)
+![imagen](images/A1_03.png)
+
+![imagen](images/A1b_04.png)
+![imagen](images/A1b_05.png)
+![imagen](images/A1b_06.png)
