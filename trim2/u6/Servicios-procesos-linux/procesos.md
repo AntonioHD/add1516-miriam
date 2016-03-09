@@ -19,6 +19,8 @@ plano” como en “segundo plano”.
 * No requieren prioridad alta. El kernel asigna menor prioridad a los procesos en “segundo plano”.
 La ejecución de una orden en “segundo plamo” origina una tarea (trabajo).
 
+***
+
 ## 1.2. Comandos para procesos
 
 ### top
@@ -129,6 +131,7 @@ Este comando, presente en la mayoría de distros, nos permite de igual manera in
 
 `service servicio param`
 
+***
 
 ## Práctica creación de un servicio
 
