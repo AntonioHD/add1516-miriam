@@ -113,27 +113,25 @@ Un servicio es un programa que se ejecuta en segundo plano, fuera del control in
 El sistema generalmente inicia los demonios durante el arranque, siendo las funciones más comunes de estos las de ofrecer servicios a otros programas, ya sea respondiendo a las peticiones que llegan a través de la red o atendiendo a procesos que se ejecutan en el mismo sistema, así como responder ante cierta actividad del hardware 
 - por ejemplo *acpid* maneja el apagado del sistema cuando el usuario pulsa el botón de encendido del equipo. 
 Algunos demonios sirven para configurar hardware:
-- Como es el caso de *udevd* en algunos sistemas GNU/Linux
+- como es el caso de *udevd* en algunos sistemas GNU/Linux
 - *cron* ejecutar tareas planificadas.
 
 **init**
 
 El servicio individual más importante en un sistema UNIX es provisto por init. init es el primer proceso que se inicia en todo sistema UNIX, siendo la última acción que el núcleo realiza al arrancar. Cuando init comienza su ejecución, continúa con el proceso de arranque del sistema, realizando varias tareas de inicio (chequear y montar sistemas de archivos, iniciar demonios, etc.). 
 
-*Directorio init.d*
+Directorio *init.d*
 
-En el directorio /etc/init.d (puede ser /etc/rc.d/init.d) se encuentran los scripts que permiten controlar los servicios y su ejecución. Cada uno de éstos shells aqui existentes aceptan, casi de manera general, los parámetros:
+En el directorio */etc/init.d* (puede ser */etc/rc.d/init.d*) se encuentran los scripts que permiten controlar los servicios y su ejecución. Cada uno de éstos shells aqui existentes aceptan, casi de manera general, los parámetros:
 
-```
-    start
+	start
     stop
     restart
     status
-```
 
 Algunos aceptan más, y pocos aceptan menos. Los parámetros suelen ser muy descriptivos (iniciar, detener, reiniciar y estatus del servicio). Así pues, para reiniciar nuestro servidor Apache en Ubuntu bastaría con escribir:
 
-/etc/init.d/apache2 restart
+`/etc/init.d/apache2 restart`
 
 Comando `service`
 
