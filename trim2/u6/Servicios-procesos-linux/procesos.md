@@ -65,7 +65,7 @@ ps -A | grep firefox
 
 Visualiza todos los procesos en forma de árbol para mostrar sus dependencias.
 
-![imagen](images/pstree.png)
+![imagen](images/pgrep_pstree.png)
 
 **kill**
 
@@ -79,7 +79,7 @@ Devuelve el ID del proceso que coincide con la búsqueda:
 	
 pgrep firefox
 
---imagen--
+![imagen](images/pgrep.png)
 
 **pkill & killall**
 
@@ -93,7 +93,7 @@ Este comando cambia el valor “nice” de un proceso en ejecución. El valor �
 	
 renice 19 PID
 
---imagen--
+![imagen](images/renice.png)
 
 **xkill**
 
