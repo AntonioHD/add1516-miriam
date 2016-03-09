@@ -79,7 +79,7 @@ Devuelve el ID del proceso que coincide con la búsqueda:
 	
 pgrep firefox
 
-![imagen](images/pgrep.png)
+![imagen](images/pgrep_pstree.png)
 
 **pkill & killall**
 
