@@ -38,7 +38,7 @@ El comando top es un clásico para mostrar los recursos usados por tu sistema y 
 
 ![imagen](images/top.png)
 
-![imagen](images/salida1.png)
+![imagen](images/salida1.gif)
 
 
 **htop**
@@ -59,7 +59,7 @@ ps -A | grep firefox
 
 ![imagen](images/ps_a.png)
 
-![imagen](images/salida2.png)
+![imagen](images/salida2.gif)
 
 **pstree**
 
@@ -99,7 +99,7 @@ renice 19 PID
 
 Si ejecutas este comando desde un terminal en modo gráfico, el cursor cambiará a un símbolo “X” y con él podrás matar cualquier programa gráfico abierto que tengas en tus escritorios (si no quieres  matarlo, haz click con el botón derecho). 
 
-![imagen](images/salida3.png)
+![imagen](images/salida3.gif)
 
 **atop**
 
