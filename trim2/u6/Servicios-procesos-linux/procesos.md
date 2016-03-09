@@ -45,11 +45,11 @@ El comando top es un clásico para mostrar los recursos usados por tu sistema y 
 
 Es un “top” mejorado, no suele venir instalado en las distribuciones Linux. Sobre todo es más fácil de interpretar que su hermano top y además puedes realizar operaciones como parar un proceso usando las teclas.
 
-![imagen](images/htop.png)
-
 Puedes instalarlo así en caso de no tenerlo en tu sistema:
 	
 `sudo apt-get install htop`
+
+![imagen](images/htop.png)
 
 **ps**
 
@@ -71,7 +71,7 @@ Visualiza todos los procesos en forma de árbol para mostrar sus dependencias.
 
 Comando para matar o parar un proceso, funciona dando su ID.
 
-![imagen](images/kill_kil_l.png)
+![imagen](images/kill_kill_l.png)
 
 **pgrep**
 
@@ -105,7 +105,6 @@ Si ejecutas este comando desde un terminal en modo gráfico, el cursor cambiará
 
 Monitor de procesos en ASCII en tiempo real donde muestra CPU, memoria, capas de red, usuario, prioridad, etc para cada proceso activo.
 
-![imagen](images/atop.png)
 
 # 2. Servicios
 
