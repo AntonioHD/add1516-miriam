@@ -12,7 +12,6 @@ procesos tienen asignado otro número denominado PPID (Parent PID), que identifi
 del proceso en cuestión. Un proceso “padre” puede tener varios “hijos” pero cada “hijo” sólo tiene un
 “padre”.
 
-
 ![imagen](images/1.png)
 
 ## 1.1. Procesos en “primer plano” y en “segundo plano”
@@ -30,15 +29,15 @@ dispositivo nulo (para eliminarla).
 * No requieren prioridad alta. El kernel asigna menor prioridad a los procesos en “segundo plano”.
 La ejecución de una orden en “segundo plamo” origina una tarea (trabajo).
 
+
 # 2. Servicios
 
 Un servicio es un programa que se ejecuta en segundo plano, fuera del control interactivo de los usuarios del sistema ya que carecen de interfaz con estos.
 
 El sistema generalmente inicia los demonios durante el arranque, siendo las funciones más comunes de estos las de ofrecer servicios a otros programas, ya sea respondiendo a las peticiones que llegan a través de la red o atendiendo a procesos que se ejecutan en el mismo sistema, así como responder ante cierta actividad del hardware 
-- Por ejemplo *acpid* maneja el apagado del sistema cuando el usuario pulsa el botón de encendido del equipo. 
-Algunos demonios sirven para configurar hardware:
-- Como es el caso de *udevd* en algunos sistemas GNU/Linux
-- *Cron* ejecutar tareas planificadas.
+- Por ejemplo:
+-  *acpid* maneja el apagado del sistema cuando el usuario pulsa el botón de encendido del equipo. 
+-  *Cron* ejecutar tareas planificadas.
 
 **init**
 
@@ -46,22 +45,31 @@ El servicio individual más importante en un sistema UNIX es provisto por init. 
 
 Directorio *init.d*
 
-En el directorio */etc/init.d* (puede ser */etc/rc.d/init.d*) se encuentran los scripts que permiten controlar los servicios y su ejecución. Cada uno de éstos shells aqui existentes aceptan, casi de manera general, los parámetros:
+En el directorio */etc/init.d* (puede ser */etc/rc.d/init.d*) se encuentran los scripts que permiten controlar los servicios y su ejecución. 
+
+![imagen](images/init_servicios.png)
+
+Cada uno de éstos shells aqui existentes aceptan, casi de manera general, los parámetros:
 
 	start
-    stop
-    restart
-    status
+   	stop
+   	restart
+   	status
 
 Algunos aceptan más, y pocos aceptan menos. Los parámetros suelen ser muy descriptivos (iniciar, detener, reiniciar y estatus del servicio). Así pues, para reiniciar nuestro servidor Apache en Ubuntu bastaría con escribir:
 
-`/etc/init.d/apache2 restart`
+`/etc/init.d/servicio parametro`
+
+![imagen](images/comandos_servicios.png)
 
 Comando `service`
 
 Este comando, presente en la mayoría de distros, nos permite de igual manera interactuar con los servicios instalados en nuestro equipo, su sintaxis:
 
-`service servicio param`
+`service servicio parametro`
+
+![imagen](images/service.png)
+
 
 ## 3. Comandos para procesos
 
