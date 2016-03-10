@@ -140,7 +140,7 @@ Monitor de procesos en ASCII en tiempo real donde muestra CPU, memoria, capas de
 
 ![imagen](images/atop.png)
 
-## 3. Práctica creación de un servicio
+## 4. Práctica creación de un servicio
 
 En éste último apartado vamos a ver los pasos a seguir para crear nuestro propio servicio mediante la definición de 2 script en Ruby:
 
@@ -154,7 +154,7 @@ A su vez tendremos 2 ficheros más:
 
 * Y otro fichero de estado que creará el script al iniciarse y tomará de referencia para continuar con su ejecución (será la condición del bucle).
 
-### 3.1. Script demonio
+### 4.1. Script demonio
 
 Lo primero que vamos a hacer es crear el script en la ruta `/usr/local/bin`; la elección de dicha ruta no se ha hecho al azar puesto que, los ejecutables suelen alojarse en las carpetas `bin` de los sistemas GNU/Linux (entre otras carpetas), y más concretamente en dicha ruta para diferenciar los ejecutables propios del sistema de los que defina el usuario. El script se llamará `kupd`.
 
@@ -192,7 +192,7 @@ Le damos al fichero permisos de ejecución:
 
 ![imagen](images/A1_01b.png)
 
-## 3.2. Fichero Log
+## 4.2. Fichero Log
 
 Una vez hemos creado el script, pasamos a definir la carpeta `/etc/kup`, y un fichero `/etc/kup/kup.log` para que el script almacene en este las líneas de texto que ya hemos mencionado:
 
@@ -200,7 +200,7 @@ Una vez hemos creado el script, pasamos a definir la carpeta `/etc/kup`, y un fi
 
 Es importante que éste fichero tenga también los permisos correspondientes, puesto que el script va a editar dicho fichero.
 
-### 3.3. Funcionamiento de nuestro demonio
+### 4.3. Funcionamiento de nuestro demonio
 
 ![imagen](images/A1.gif)
 
@@ -218,7 +218,7 @@ Para parar el proceso, hacemos un borrado del fichero de estado que crea el prop
 
 ![imagen](images/A1_04.png)
 
-### 3.4. Script de control
+### 4.4. Script de control
 
 Para que el proceso que hemos definido sea un servicio, vamos a crear un script de control que se ejecutará con el arranque del sistema; y que se encargará de definir el comportamiento de nuestro proceso.
 
@@ -262,7 +262,7 @@ Le damos permisos de ejecución al script:
 
 ![imagen](images/A1_06.png)
 
-### 3.5. Funcionamiento de nuestro servicio
+### 4.5. Funcionamiento de nuestro servicio
 
 Probaremos ahora que el guión de inicio/parada funciona correctamente con nuestro servicio, mediante el comando `/etc/init.d/kup [start|stop|status]`:
 
